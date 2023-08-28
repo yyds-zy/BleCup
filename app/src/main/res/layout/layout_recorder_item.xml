@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="128dp"
+    android:layout_height="128dp"
+    android:orientation="vertical"
+    android:layout_marginLeft="16dp"
+    android:background="@drawable/recorder_item_bg">
+
+    <TextView
+        android:id="@+id/week_tv"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentRight="true"
+        android:textColor="#FFA7ACD6"
+        android:text="星期五"
+        android:textSize="12sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/open_cup_time"
+        android:layout_below="@+id/week_tv"
+        android:layout_marginLeft="14dp"
+        android:textColor="#FF2B3DDC"
+        android:textSize="12sp"
+        android:text="开盖时间"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/open_cup_time_tv"
+        android:layout_marginLeft="14dp"
+        android:layout_below="@+id/open_cup_time"
+        android:layout_width="64dp"
+        android:layout_height="22dp"
+        android:text="13:02:05"
+        android:textColor="#FF2B3DDC"
+        android:textSize="16sp"
+        />
+
+    <TextView
+        android:id="@+id/close_cup_time"
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/open_cup_time_tv"
+        android:layout_marginLeft="14dp"
+        android:textColor="#FF2B3DDC"
+        android:textSize="12sp"
+        android:text="关盖时间"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/close_cup_time_tv"
+        android:layout_marginLeft="14dp"
+        android:layout_below="@+id/close_cup_time"
+        android:layout_width="64dp"
+        android:layout_height="22dp"
+        android:text="13:02:05"
+        android:textColor="#FF2B3DDC"
+        android:textSize="16sp"
+        />
+</RelativeLayout>

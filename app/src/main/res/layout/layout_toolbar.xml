@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/toolbar"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:textSize="20sp"
+            tools:text="TextView"
+            android:textColor="#2b3ddc"
+            android:visibility="visible"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <ImageView
+            android:id="@+id/toolbar_icon"
+            android:layout_marginRight="20dp"
+            android:layout_width="30dp"
+            android:layout_marginLeft="20dp"
+            android:src="@mipmap/ble_cup"
+            android:visibility="gone"
+            android:layout_centerVertical="true"
+            android:layout_height="30dp"/>
+
+        <TextView
+            android:id="@+id/toolbar_menu"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_centerInParent="true"
+            android:layout_width="50dp"
+            android:visibility="gone"
+            android:text="扫描"
+            android:textSize="18sp"
+            android:textColor="#FFF"
+            android:gravity="center"
+            android:layout_height="match_parent"/>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/BleCup/ble_cup/app/src/main/res/drawable/add_device_bg.xml" value="0.36614583333333334" />
+        <entry key="..\:/BleCup/ble_cup/app/src/main/res/drawable/ic_launcher_background.xml" value="0.3421875" />
+        <entry key="..\:/BleCup/ble_cup/app/src/main/res/drawable/image_bg.xml" value="0.3463541666666667" />
+        <entry key="..\:/BleCup/ble_cup/app/src/main/res/drawable/recorder_item_bg.xml" value="0.3421875" />
+        <entry key="..\:/BleCup/ble_cup/app/src/main/res/layout/activity_ble_scan.xml" value="0.3260416666666667" />
+        <entry key="..\:/BleCup/ble_cup/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/BleCup/ble_cup/app/src/main/res/layout/activity_notify.xml" value="0.5536458333333333" />
+        <entry key="..\:/BleCup/ble_cup/app/src/main/res/layout/fragment_layout_home.xml" value="0.1" />
+        <entry key="..\:/BleCup/ble_cup/app/src/main/res/layout/fragment_layout_me.xml" value="0.3260416666666667" />
+        <entry key="..\:/BleCup/ble_cup/app/src/main/res/layout/fragment_layout_msg.xml" value="0.34375" />
+        <entry key="..\:/BleCup/ble_cup/app/src/main/res/layout/layout_recorder_item.xml" value="0.3260416666666667" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

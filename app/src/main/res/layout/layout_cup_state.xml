@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="17dp"
+    android:layout_marginRight="17dp"
+    android:gravity="center_vertical">
+
+
+    <TextView
+        android:id="@+id/week_tv"
+        android:layout_margin="5dp"
+        android:textColor="#2b3ddc"
+        android:text="2月27日 周一"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:background="@drawable/recorder_item_bg"
+        android:layout_below="@+id/week_tv"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="81dp">
+
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/open_cup_time"
+                android:layout_marginLeft="17dp"
+                android:maxLines="3"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:text="关闭时间"
+                android:textColor="#2b3ddc"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:id="@+id/open_cup_time_tv"
+                android:layout_marginRight="17dp"
+                android:maxLines="3"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:text="23:14:11"
+                android:textColor="#2b3ddc"
+                android:textSize="16sp"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:background="#2b3ddc"
+            android:layout_width="match_parent"
+            android:layout_height="1sp"/>
+
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/close_cup_time"
+                android:layout_marginLeft="17dp"
+                android:maxLines="3"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:text="开启时间"
+                android:textColor="#2b3ddc"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:id="@+id/close_cup_time_tv"
+                android:layout_marginRight="17dp"
+                android:maxLines="3"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:text="23:14:11"
+                android:textColor="#2b3ddc"
+                android:textSize="16sp"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

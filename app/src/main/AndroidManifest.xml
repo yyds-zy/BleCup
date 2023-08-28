@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.bluetooth.cup">
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:name=".app.BleCupApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/logo"
+        android:supportsRtl="true"
+        android:theme="@style/MyAppTheme">
+
+        <meta-data android:name="DATABASE" android:value="cup_record.db"/>
+        <meta-data android:name="VERSION" android:value="1"/>
+        <meta-data android:name="QUERY_LOG" android:value="true"/>
+        <meta-data android:name="DOMAIN_PACKAGE_NAME" android:value="com.bluetooth.cup.model"/>
+
+        <activity android:name=".ui.activity.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.activity.SplashActivity">
+
+        </activity>
+
+        <activity android:name=".ui.activity.BleScanActivity"></activity>
+    </application>
+
+</manifest>

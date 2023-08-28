@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/sync_time_tv"
+                android:background="@color/colorBlack"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_margin="5dp"
+                android:textColor="@color/colorWhite"
+                android:layout_below="@+id/control_light"
+                android:text="同步时钟"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"/>
+
+            <RelativeLayout
+                android:id="@+id/add_device_layout"
+                android:background="@drawable/add_device_bg"
+                android:layout_marginTop="19dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+
+                <ImageView
+                    android:layout_centerInParent="true"
+                    android:src="@mipmap/white_add"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_marginTop="14dp"
+                android:layout_width="match_parent"
+                android:layout_height="86dp">
+
+                <RelativeLayout
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout
+                        android:id="@+id/notify_layout"
+                        android:background="@drawable/image_bg"
+                        android:layout_centerHorizontal="true"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp">
+
+                        <ImageView
+                            android:id="@+id/notify_image"
+                            android:src="@mipmap/notify_fail"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_centerInParent="true"/>
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/notify_tv"
+                        android:text="开启通知"
+                        android:layout_marginTop="4dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@+id/notify_layout"
+                        android:textColor="@color/colorGray"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout
+                        android:id="@+id/connect_layout"
+                        android:background="@drawable/image_bg"
+                        android:layout_centerHorizontal="true"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp">
+
+                        <ImageView
+                            android:id="@+id/connect_image"
+                            android:src="@mipmap/conncent_fail"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_centerInParent="true"/>
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/connect_tv"
+                        android:text="未连接"
+                        android:layout_marginTop="4dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@+id/connect_layout"
+                        android:textColor="@color/colorGray"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout
+                        android:id="@+id/find_cup_layout"
+                        android:background="@drawable/image_bg"
+                        android:layout_centerHorizontal="true"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp">
+
+                        <ImageView
+                            android:id="@+id/find_image"
+                            android:src="@mipmap/search_fail"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_centerInParent="true"/>
+                    </RelativeLayout>
+
+                    <TextView
+                        android:text="寻找水杯"
+                        android:layout_marginTop="4dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@+id/find_cup_layout"
+                        android:textColor="@color/colorGray"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </RelativeLayout>
+            </LinearLayout>
+
+
+
+            <RelativeLayout
+                android:layout_marginTop="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="310dp"
+                android:gravity="center">
+
+                <com.bluetooth.cup.view.WaveProgress
+                    android:id="@+id/wave_progress_bar"
+                    android:layout_width="310dp"
+                    android:layout_height="310dp"
+                    android:layout_gravity="center_horizontal"
+                    app:darkWaveAnimTime="1000"
+                    app:darkWaveColor="@color/dark"
+                    app:lightWaveAnimTime="2000"
+                    app:lightWaveColor="@color/light"
+                    app:lightWaveDirect="R2L"
+                    app:circleWidth="15dp"
+                    app:lockWave="false"
+                    app:valueSize="16sp"
+                    app:waveHeight="30dp"
+                    app:waveNum="1"
+                    tools:ignore="MissingConstraints" />
+
+                <RelativeLayout
+                    android:layout_width="310dp"
+                    android:layout_height="310dp">
+
+                    <ImageView
+                        android:layout_width="58dp"
+                        android:layout_height="157dp"
+                        android:layout_centerInParent="true"
+                        android:src="@mipmap/disconnect_cup" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="54dp"
+                android:layout_marginBottom="16dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

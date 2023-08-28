@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.MainActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/layout_toolbar"/>
+
+    <TextView
+        android:id="@+id/scan_tv"
+        android:textSize="18sp"
+        android:textColor="@color/colorWhite"
+        android:gravity="center"
+        android:background="#3F3F3F"
+        android:layout_marginTop="0.5dp"
+        android:text="@string/ble_scan"
+        android:visibility="gone"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/toolbar"
+        android:layout_width="100dp"
+        android:layout_height="50dp"/>
+
+    <FrameLayout
+        android:id="@+id/fragment_layout"
+        android:layout_above="@+id/bottom_tab"
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:id="@+id/bottom_tab"
+        android:background="@drawable/home_tab_bg"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="83dp">
+        <RelativeLayout
+            android:id="@+id/tab_home_bg"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/tab_home_img"
+                android:src="@mipmap/home_selected_true"
+                android:layout_centerInParent="true"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="29dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/tab_msg_bg"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/tab_msg_img"
+                android:src="@mipmap/record_selected_false"
+                android:layout_centerInParent="true"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="29dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/tab_me_bg"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/tab_me_img"
+                android:src="@mipmap/about_selected_false"
+                android:layout_centerInParent="true"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="29dp"/>
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</RelativeLayout>
